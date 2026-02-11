@@ -1,32 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="3" passed="1" failed="1" skipped="1">
+<testng-results ignored="0" total="3" passed="2" failed="0" skipped="1">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-02-11T16:18:19 IST" name="AmazonSuite" finished-at="2026-02-11T16:21:19 IST" duration-ms="180548">
+  <suite started-at="2026-02-11T21:24:58 IST" name="AmazonSuite" finished-at="2026-02-11T21:27:58 IST" duration-ms="180558">
     <groups>
     </groups>
-    <test started-at="2026-02-11T16:18:19 IST" name="FirefoxTest" finished-at="2026-02-11T16:18:29 IST" duration-ms="10553">
+    <test started-at="2026-02-11T21:24:58 IST" name="ChromeTest" finished-at="2026-02-11T21:25:10 IST" duration-ms="12001">
       <class name="com.amazon.amazonProject1.AmazonTest">
-        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:com.amazon.amazonProject1.AmazonTest@79079097]" started-at="2026-02-11T16:18:19 IST" name="setup" finished-at="2026-02-11T16:18:21 IST" duration-ms="2309" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[firefox]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="amazonSearch()[pri:0, instance:com.amazon.amazonProject1.AmazonTest@79079097]" started-at="2026-02-11T16:18:21 IST" name="amazonSearch" finished-at="2026-02-11T16:18:29 IST" duration-ms="8225" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- amazonSearch -->
-      </class> <!-- com.amazon.amazonProject1.AmazonTest -->
-    </test> <!-- FirefoxTest -->
-    <test started-at="2026-02-11T16:18:19 IST" name="ChromeTest" finished-at="2026-02-11T16:18:40 IST" duration-ms="21269">
-      <class name="com.amazon.amazonProject1.AmazonTest">
-        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:com.amazon.amazonProject1.AmazonTest@7c7a06ec]" started-at="2026-02-11T16:18:19 IST" name="setup" finished-at="2026-02-11T16:18:20 IST" duration-ms="989" status="PASS">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:com.amazon.amazonProject1.AmazonTest@7c7a06ec]" started-at="2026-02-11T21:24:58 IST" name="setup" finished-at="2026-02-11T21:25:00 IST" duration-ms="2033" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -37,75 +18,34 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="amazonSearch()[pri:0, instance:com.amazon.amazonProject1.AmazonTest@7c7a06ec]" started-at="2026-02-11T16:18:20 IST" name="amazonSearch" finished-at="2026-02-11T16:18:40 IST" duration-ms="20246" status="FAIL">
-          <exception class="org.openqa.selenium.WebDriverException">
-            <message>
-              <![CDATA[tab crashed
-  (Session info: chrome=144.0.7559.109)
-Build info: version: '4.16.1', revision: '9b4c83354e'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.12'
-Driver info: org.openqa.selenium.remote.RemoteWebDriver
-Command: [1a3efd3deab821efc4846873270dc35c, getTitle {}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 144.0.7559.109, chrome: {chromedriverVersion: 144.0.7559.109 (6a8d5e49388..., userDataDir: /tmp/org.chromium.Chromium....}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:46795}, goog:processID: 1334, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: linux, proxy: Proxy(), se:bidiEnabled: false, se:cdp: ws://172.18.0.5:4444/sessio..., se:cdpVersion: 144.0.7559.109, se:containerName: 478ee5695490, se:deleteSessionOnUi: true, se:downloadsEnabled: true, se:noVncPort: 7900, se:vnc: ws://172.18.0.5:4444/sessio..., se:vncEnabled: true, se:vncLocalAddress: ws://172.18.0.5:7900, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 1a3efd3deab821efc4846873270dc35c]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.WebDriverException: tab crashed
-  (Session info: chrome=144.0.7559.109)
-Build info: version: '4.16.1', revision: '9b4c83354e'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.12'
-Driver info: org.openqa.selenium.remote.RemoteWebDriver
-Command: [1a3efd3deab821efc4846873270dc35c, getTitle {}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 144.0.7559.109, chrome: {chromedriverVersion: 144.0.7559.109 (6a8d5e49388..., userDataDir: /tmp/org.chromium.Chromium....}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:46795}, goog:processID: 1334, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: linux, proxy: Proxy(), se:bidiEnabled: false, se:cdp: ws://172.18.0.5:4444/sessio..., se:cdpVersion: 144.0.7559.109, se:containerName: 478ee5695490, se:deleteSessionOnUi: true, se:downloadsEnabled: true, se:noVncPort: 7900, se:vnc: ws://172.18.0.5:4444/sessio..., se:vncEnabled: true, se:vncLocalAddress: ws://172.18.0.5:7900, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 1a3efd3deab821efc4846873270dc35c
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
-at org.openqa.selenium.remote.TracedCommandExecutor.execute(TracedCommandExecutor.java:51)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:523)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:596)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:600)
-at org.openqa.selenium.remote.RemoteWebDriver.getTitle(RemoteWebDriver.java:310)
-at com.amazon.amazonProject1.AmazonTest.amazonSearch(AmazonTest.java:40)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:741)
-at org.testng.TestRunner.run(TestRunner.java:616)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:463)
-at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
-at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-at java.base/java.lang.Thread.run(Thread.java:842)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.WebDriverException -->
+        <test-method signature="amazonSearch()[pri:0, instance:com.amazon.amazonProject1.AmazonTest@7c7a06ec]" started-at="2026-02-11T21:25:00 IST" name="amazonSearch" finished-at="2026-02-11T21:25:10 IST" duration-ms="9934" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- amazonSearch -->
       </class> <!-- com.amazon.amazonProject1.AmazonTest -->
     </test> <!-- ChromeTest -->
-    <test started-at="2026-02-11T16:18:19 IST" name="EdgeTest" finished-at="2026-02-11T16:21:19 IST" duration-ms="180547">
+    <test started-at="2026-02-11T21:24:58 IST" name="FirefoxTest" finished-at="2026-02-11T21:25:16 IST" duration-ms="17812">
       <class name="com.amazon.amazonProject1.AmazonTest">
-        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:com.amazon.amazonProject1.AmazonTest@4b2bac3f]" started-at="2026-02-11T16:18:19 IST" name="setup" finished-at="2026-02-11T16:21:19 IST" duration-ms="180521" status="FAIL">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:com.amazon.amazonProject1.AmazonTest@79079097]" started-at="2026-02-11T21:24:58 IST" name="setup" finished-at="2026-02-11T21:25:02 IST" duration-ms="4091" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="amazonSearch()[pri:0, instance:com.amazon.amazonProject1.AmazonTest@79079097]" started-at="2026-02-11T21:25:02 IST" name="amazonSearch" finished-at="2026-02-11T21:25:16 IST" duration-ms="13704" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- amazonSearch -->
+      </class> <!-- com.amazon.amazonProject1.AmazonTest -->
+    </test> <!-- FirefoxTest -->
+    <test started-at="2026-02-11T21:24:58 IST" name="EdgeTest" finished-at="2026-02-11T21:27:58 IST" duration-ms="180558">
+      <class name="com.amazon.amazonProject1.AmazonTest">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:com.amazon.amazonProject1.AmazonTest@4b2bac3f]" started-at="2026-02-11T21:24:58 IST" name="setup" finished-at="2026-02-11T21:27:58 IST" duration-ms="180532" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -125,7 +65,7 @@ at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:541)
 at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:237)
 at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:164)
 at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:144)
-at com.amazon.amazonProject1.AmazonTest.setup(AmazonTest.java:31)
+at com.amazon.amazonProject1.AmazonTest.setup(AmazonTest.java:32)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -171,7 +111,7 @@ at org.openqa.selenium.remote.http.jdk.JdkHttpClient.execute0(JdkHttpClient.java
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="amazonSearch()[pri:0, instance:com.amazon.amazonProject1.AmazonTest@4b2bac3f]" started-at="2026-02-11T16:21:19 IST" name="amazonSearch" finished-at="2026-02-11T16:21:19 IST" duration-ms="0" status="SKIP">
+        <test-method signature="amazonSearch()[pri:0, instance:com.amazon.amazonProject1.AmazonTest@4b2bac3f]" started-at="2026-02-11T21:27:58 IST" name="amazonSearch" finished-at="2026-02-11T21:27:58 IST" duration-ms="0" status="SKIP">
           <exception class="org.openqa.selenium.SessionNotCreatedException">
             <message>
               <![CDATA[Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure. 
@@ -184,7 +124,7 @@ at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:541)
 at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:237)
 at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:164)
 at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:144)
-at com.amazon.amazonProject1.AmazonTest.setup(AmazonTest.java:31)
+at com.amazon.amazonProject1.AmazonTest.setup(AmazonTest.java:32)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)

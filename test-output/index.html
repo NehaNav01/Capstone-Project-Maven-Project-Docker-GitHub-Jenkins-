@@ -25,7 +25,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite, 1 failed test</span>
+      <span class="top-banner-font-1">1 suite</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -39,7 +39,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-AmazonSuite" class="navigator-link">
-              <span class="suite-name border-failed">AmazonSuite</span>
+              <span class="suite-name border-skipped">AmazonSuite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -92,21 +92,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">3 methods, 1 failed,  1 skipped,  1 passed</span>
-                  </li>
-                  <li>
-                    <span class="method-list-title failed">Failed methods</span>
-                    <span class="show-or-hide-methods failed">
-                      <a href="#" panel-name="suite-AmazonSuite" class="hide-methods failed suite-AmazonSuite"> (hide)</a> <!-- hide-methods failed suite-AmazonSuite -->
-                      <a href="#" panel-name="suite-AmazonSuite" class="show-methods failed suite-AmazonSuite"> (show)</a> <!-- show-methods failed suite-AmazonSuite -->
-                    </span>
-                    <div class="method-list-content failed suite-AmazonSuite">
-                      <span>
-                        <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-AmazonSuite" title="com.amazon.amazonProject1.AmazonTest" class="method navigator-link" hash-for-method="amazonSearch">amazonSearch</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                    </div> <!-- method-list-content failed suite-AmazonSuite -->
+                    <span class="method-stats">3 methods,  1 skipped,  2 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title skipped">Skipped methods</span>
@@ -134,6 +120,11 @@
                         <a href="#" panel-name="suite-AmazonSuite" title="com.amazon.amazonProject1.AmazonTest" class="method navigator-link" hash-for-method="amazonSearch">amazonSearch</a> <!-- method navigator-link -->
                       </span>
                       <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-AmazonSuite" title="com.amazon.amazonProject1.AmazonTest" class="method navigator-link" hash-for-method="amazonSearch">amazonSearch</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
                     </div> <!-- method-list-content passed suite-AmazonSuite -->
                   </li>
                 </ul>
@@ -146,46 +137,6 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-AmazonSuite" class="panel AmazonSuite">
-          <div class="suite-AmazonSuite-class-failed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="failed.png"/>
-              <span class="class-name">com.amazon.amazonProject1.AmazonTest</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="amazonSearch">
-                  </a> <!-- amazonSearch -->
-                  <span class="method-name">amazonSearch</span>
-                  <div class="stack-trace">org.openqa.selenium.WebDriverException: tab crashed
-  (Session info: chrome=144.0.7559.109)
-Build info: version: &apos;4.16.1&apos;, revision: &apos;9b4c83354e&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.12&apos;
-Driver info: org.openqa.selenium.remote.RemoteWebDriver
-Command: [1a3efd3deab821efc4846873270dc35c, getTitle {}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 144.0.7559.109, chrome: {chromedriverVersion: 144.0.7559.109 (6a8d5e49388..., userDataDir: /tmp/org.chromium.Chromium....}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:46795}, goog:processID: 1334, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: linux, proxy: Proxy(), se:bidiEnabled: false, se:cdp: ws://172.18.0.5:4444/sessio..., se:cdpVersion: 144.0.7559.109, se:containerName: 478ee5695490, se:deleteSessionOnUi: true, se:downloadsEnabled: true, se:noVncPort: 7900, se:vnc: ws://172.18.0.5:4444/sessio..., se:vncEnabled: true, se:vncLocalAddress: ws://172.18.0.5:7900, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 1a3efd3deab821efc4846873270dc35c
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
-	at org.openqa.selenium.remote.TracedCommandExecutor.execute(TracedCommandExecutor.java:51)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:523)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:596)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:600)
-	at org.openqa.selenium.remote.RemoteWebDriver.getTitle(RemoteWebDriver.java:310)
-	at com.amazon.amazonProject1.AmazonTest.amazonSearch(AmazonTest.java:40)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-	at java.base/java.lang.Thread.run(Thread.java:842)
-... Removed 22 stack frames
-</div> <!-- stack-trace -->
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-AmazonSuite-class-failed -->
           <div class="suite-AmazonSuite-class-skipped">
             <div class="main-panel-header rounded-window-top">
               <img src="skipped.png"/>
@@ -203,7 +154,7 @@ Host info: host: &apos;LAPTOP-DNHLF3S6&apos;, ip: &apos;192.168.29.32&apos;
 	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:237)
 	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:164)
 	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:144)
-	at com.amazon.amazonProject1.AmazonTest.setup(AmazonTest.java:31)
+	at com.amazon.amazonProject1.AmazonTest.setup(AmazonTest.java:32)
 	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
@@ -241,6 +192,13 @@ Caused by: java.util.concurrent.TimeoutException
               <span class="class-name">com.amazon.amazonProject1.AmazonTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="amazonSearch">
+                  </a> <!-- amazonSearch -->
+                  <span class="method-name">amazonSearch</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
                   <a name="amazonSearch">
@@ -325,11 +283,11 @@ data.addRows(3);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'amazonSearch')
 data.setCell(0, 2, 'com.amazon.amazonProject1.AmazonTest')
-data.setCell(0, 3, 20246);
+data.setCell(0, 3, 13704);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'amazonSearch')
 data.setCell(1, 2, 'com.amazon.amazonProject1.AmazonTest')
-data.setCell(1, 3, 8225);
+data.setCell(1, 3, 9934);
 data.setCell(2, 0, 2)
 data.setCell(2, 1, 'amazonSearch')
 data.setCell(2, 2, 'com.amazon.amazonProject1.AmazonTest')
@@ -366,7 +324,7 @@ return data;
             <div class="chronological-class">
               <div class="chronological-class-name">com.amazon.amazonProject1.AmazonTest</div> <!-- chronological-class-name -->
               <div class="configuration-test before">
-                <span class="method-name">setup(chrome)</span>
+                <span class="method-name">setup(firefox)</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-test before -->
               <div class="configuration-test before">
@@ -376,18 +334,16 @@ return data;
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-test before -->
               <div class="configuration-test before">
-                <span class="method-name">setup(firefox)</span>
+                <span class="method-name">setup(chrome)</span>
                 <span class="method-start">1 ms</span>
               </div> <!-- configuration-test before -->
               <div class="test-method">
-                <img src="failed.png">
-                </img>
                 <span class="method-name">amazonSearch</span>
-                <span class="method-start">1007 ms</span>
+                <span class="method-start">2049 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">amazonSearch</span>
-                <span class="method-start">2311 ms</span>
+                <span class="method-start">4092 ms</span>
               </div> <!-- test-method -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

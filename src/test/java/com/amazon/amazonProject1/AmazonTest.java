@@ -1,3 +1,4 @@
+
 package com.amazon.amazonProject1;
 
 import org.openqa.selenium.By;
@@ -5,16 +6,18 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.remote.RemoteWebDriver;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.testng.annotations.*;
+
+import java.net.MalformedURLException;
 import java.net.URL;
 
 
 public class AmazonTest {
 
     WebDriver driver;
-
     @Parameters("browser")
     @BeforeTest
-    public void setup(String browser) throws Exception {
+    public void setup(@Optional("chrome") String browser) throws MalformedURLException {
+  
 
         DesiredCapabilities cap = new DesiredCapabilities();
 
