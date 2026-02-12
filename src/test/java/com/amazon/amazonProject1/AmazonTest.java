@@ -1,51 +1,49 @@
-
 package com.amazon.amazonProject1;
 
-import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.remote.RemoteWebDriver;
-import org.openqa.selenium.remote.DesiredCapabilities;
-import org.testng.annotations.*;
+import org.openqa.selenium.chrome.ChromeOptions;
+import org.openqa.selenium.firefox.FirefoxOptions;
+import org.openqa.selenium.edge.EdgeOptions;
+import org.testng.annotations.BeforeTest;
+import org.testng.annotations.Parameters;
+import org.testng.annotations.Test;
+import org.testng.annotations.AfterTest;
 
-import java.net.MalformedURLException;
 import java.net.URL;
-
 
 public class AmazonTest {
 
     WebDriver driver;
+
     @Parameters("browser")
     @BeforeTest
-    public void setup(@Optional("chrome") String browser) throws MalformedURLException {
-  
-
-        DesiredCapabilities cap = new DesiredCapabilities();
-
+    public void setup(String browser) throws Exception {
         if(browser.equalsIgnoreCase("chrome")) {
-            cap.setBrowserName("chrome");
+            ChromeOptions options = new ChromeOptions();
+            driver = new RemoteWebDriver(new URL("http://localhost:4444"), options);
+            
+        } else if(browser.equalsIgnoreCase("firefox")) {
+            FirefoxOptions options = new FirefoxOptions();
+            driver = new RemoteWebDriver(new URL("http://localhost:4444"), options);
+        } else if(browser.equalsIgnoreCase("edge")) {
+            EdgeOptions options = new EdgeOptions();
+            driver = new RemoteWebDriver(new URL("http://localhost:4444"), options);
+        } else {
+            throw new Exception("Browser not supported");
         }
-        else if(browser.equalsIgnoreCase("firefox")) {
-            cap.setBrowserName("firefox");
-        }
-        else if(browser.equalsIgnoreCase("edge")) {
-            cap.setBrowserName("edge");   
-        }
-
-        driver = new RemoteWebDriver(new URL("http://localhost:4444"), cap);
     }
 
     @Test
-    public void amazonSearch() throws InterruptedException {
+    public void amazonSearch() {
+        driver.get("https://www.amazon.in/");
+        System.out.println("Page Title: " + driver.getTitle());
+    }
 
-        driver.get("https://www.amazon.in");
-        Thread.sleep(5000);
-
-        String title = driver.getTitle();
-        System.out.println("Title: " + title);
-
-        driver.findElement(By.id("twotabsearchtextbox")).sendKeys("Laptop");
-        driver.findElement(By.id("nav-search-submit-button")).click();
-
-        System.out.println("Amazon Test Executed");
+    @AfterTest
+    public void tearDown() {
+        if(driver != null) {
+            driver.quit();
+        }
     }
 }

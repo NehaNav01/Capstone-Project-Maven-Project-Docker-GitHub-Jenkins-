@@ -39,7 +39,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-AmazonSuite" class="navigator-link">
-              <span class="suite-name border-skipped">AmazonSuite</span>
+              <span class="suite-name border-passed">AmazonSuite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -92,21 +92,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">3 methods,  1 skipped,  2 passed</span>
-                  </li>
-                  <li>
-                    <span class="method-list-title skipped">Skipped methods</span>
-                    <span class="show-or-hide-methods skipped">
-                      <a href="#" panel-name="suite-AmazonSuite" class="hide-methods skipped suite-AmazonSuite"> (hide)</a> <!-- hide-methods skipped suite-AmazonSuite -->
-                      <a href="#" panel-name="suite-AmazonSuite" class="show-methods skipped suite-AmazonSuite"> (show)</a> <!-- show-methods skipped suite-AmazonSuite -->
-                    </span>
-                    <div class="method-list-content skipped suite-AmazonSuite">
-                      <span>
-                        <img src="skipped.png" width="3%"/>
-                        <a href="#" panel-name="suite-AmazonSuite" title="com.amazon.amazonProject1.AmazonTest" class="method navigator-link" hash-for-method="amazonSearch">amazonSearch</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                    </div> <!-- method-list-content skipped suite-AmazonSuite -->
+                    <span class="method-stats">3 methods,   3 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -115,6 +101,11 @@
                       <a href="#" panel-name="suite-AmazonSuite" class="show-methods passed suite-AmazonSuite"> (show)</a> <!-- show-methods passed suite-AmazonSuite -->
                     </span>
                     <div class="method-list-content passed suite-AmazonSuite">
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-AmazonSuite" title="com.amazon.amazonProject1.AmazonTest" class="method navigator-link" hash-for-method="amazonSearch">amazonSearch</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-AmazonSuite" title="com.amazon.amazonProject1.AmazonTest" class="method navigator-link" hash-for-method="amazonSearch">amazonSearch</a> <!-- method navigator-link -->
@@ -137,9 +128,9 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-AmazonSuite" class="panel AmazonSuite">
-          <div class="suite-AmazonSuite-class-skipped">
+          <div class="suite-AmazonSuite-class-passed">
             <div class="main-panel-header rounded-window-top">
-              <img src="skipped.png"/>
+              <img src="passed.png"/>
               <span class="class-name">com.amazon.amazonProject1.AmazonTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
@@ -148,50 +139,8 @@
                   <a name="amazonSearch">
                   </a> <!-- amazonSearch -->
                   <span class="method-name">amazonSearch</span>
-                  <div class="stack-trace">org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure. 
-Host info: host: &apos;LAPTOP-DNHLF3S6&apos;, ip: &apos;192.168.29.32&apos;
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:541)
-	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:237)
-	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:164)
-	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:144)
-	at com.amazon.amazonProject1.AmazonTest.setup(AmazonTest.java:32)
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-	at java.base/java.lang.Thread.run(Thread.java:842)
-Caused by: org.openqa.selenium.TimeoutException: java.util.concurrent.TimeoutException
-Build info: version: &apos;4.16.1&apos;, revision: &apos;9b4c83354e&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.12&apos;
-Driver info: driver.version: RemoteWebDriver
-	at org.openqa.selenium.remote.http.jdk.JdkHttpClient.execute0(JdkHttpClient.java:402)
-	at org.openqa.selenium.remote.http.AddSeleniumUserAgent.lambda$apply$0(AddSeleniumUserAgent.java:42)
-	at org.openqa.selenium.remote.http.Filter.lambda$andFinally$1(Filter.java:55)
-	at org.openqa.selenium.remote.http.jdk.JdkHttpClient.execute(JdkHttpClient.java:358)
-	at org.openqa.selenium.remote.tracing.TracedHttpClient.execute(TracedHttpClient.java:54)
-	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:115)
-	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:96)
-	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:68)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:163)
-	at org.openqa.selenium.remote.TracedCommandExecutor.execute(TracedCommandExecutor.java:51)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:523)
-	... 22 more
-Caused by: java.util.concurrent.TimeoutException
-	at java.base/java.util.concurrent.CompletableFuture.timedGet(CompletableFuture.java:1960)
-	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2095)
-	at org.openqa.selenium.remote.http.jdk.JdkHttpClient.execute0(JdkHttpClient.java:385)
-	... 32 more
-... Removed 14 stack frames
-</div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-AmazonSuite-class-skipped -->
-          <div class="suite-AmazonSuite-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">com.amazon.amazonProject1.AmazonTest</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
                   <a name="amazonSearch">
@@ -283,20 +232,20 @@ data.addRows(3);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'amazonSearch')
 data.setCell(0, 2, 'com.amazon.amazonProject1.AmazonTest')
-data.setCell(0, 3, 13704);
+data.setCell(0, 3, 1120);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'amazonSearch')
 data.setCell(1, 2, 'com.amazon.amazonProject1.AmazonTest')
-data.setCell(1, 3, 9934);
+data.setCell(1, 3, 925);
 data.setCell(2, 0, 2)
 data.setCell(2, 1, 'amazonSearch')
 data.setCell(2, 2, 'com.amazon.amazonProject1.AmazonTest')
-data.setCell(2, 3, 0);
+data.setCell(2, 3, 778);
 window.suiteTableData['AmazonSuite']= { tableData: data, tableDiv: 'times-div-AmazonSuite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 3 minutes</span>
+              <span class="suite-total-time">Total running time: 5 seconds</span>
               <div id="times-div-AmazonSuite">
               </div> <!-- times-div-AmazonSuite -->
             </div> <!-- times-div -->
@@ -324,27 +273,41 @@ return data;
             <div class="chronological-class">
               <div class="chronological-class-name">com.amazon.amazonProject1.AmazonTest</div> <!-- chronological-class-name -->
               <div class="configuration-test before">
+                <span class="method-name">setup(chrome)</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-test before -->
+              <div class="configuration-test before">
                 <span class="method-name">setup(firefox)</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-test before -->
               <div class="configuration-test before">
-                <img src="failed.png">
-                </img>
                 <span class="method-name">setup(edge)</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-test before -->
-              <div class="configuration-test before">
-                <span class="method-name">setup(chrome)</span>
-                <span class="method-start">1 ms</span>
-              </div> <!-- configuration-test before -->
               <div class="test-method">
                 <span class="method-name">amazonSearch</span>
-                <span class="method-start">2049 ms</span>
+                <span class="method-start">1699 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-test after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">2827 ms</span>
+              </div> <!-- configuration-test after -->
+              <div class="test-method">
+                <span class="method-name">amazonSearch</span>
+                <span class="method-start">2933 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">amazonSearch</span>
-                <span class="method-start">4092 ms</span>
+                <span class="method-start">3714 ms</span>
               </div> <!-- test-method -->
+              <div class="configuration-test after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">3860 ms</span>
+              </div> <!-- configuration-test after -->
+              <div class="configuration-test after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">4493 ms</span>
+              </div> <!-- configuration-test after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
       </div> <!-- main-panel-root -->
